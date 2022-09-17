@@ -1,0 +1,28 @@
+
+.layout {
+    /* color: #f3f4f8; */
+    /* color: black; */
+    overflow: hidden;
+    /* width: 100%; */
+}
+
+.layout__content {
+    padding-left: 6vw;
+    background-color: #f3f4f8;
+    /* background-color: blue; */
+    min-height: 100vh;
+
+}
+
+.layout__content-main {
+    width: 100%;
+    /* display: flex; */
+    flex: 1;
+    /* background: #0155550; */
+}
+
+@media only screen and (max-width: 800px) {
+    .layout__content {
+        /* padding-left: 200px; */
+    }
+}

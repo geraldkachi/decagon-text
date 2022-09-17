@@ -1,0 +1,90 @@
+.topnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 30px;
+    background-color: white;
+}
+
+.topnav__search {
+    position: relative;
+    height: 50px;
+    background-color:black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.topnav__search > input {
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 10px 60px 10px 20px;
+    color: black;
+    font-size: 1rem;
+    background-color: #f3f7fa;
+}
+.topnav__search > input::placeholder {
+    color: #015555;
+}
+
+.topnav__search > input:focus {
+    outline: none;
+}
+
+.topnav__search > i {
+    position: absolute;
+    right: 20px;
+    font-size: 1rem;
+}
+.topnav__right {
+    display: flex;
+    align-items: center;
+}
+
+.topnav__right-item ~ .topnav__right-item {
+    margin-left: 30px;
+}
+
+
+.notification-item {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.notification-item:hover {
+    background-color: var(--second-bg);
+}
+
+.notification-item > i {
+    margin-right: 20px;
+    font-size: 1.2rem;
+}
+
+.topnav__right-user {
+    display: flex;
+    align-items: center;
+}
+
+.topnav__right-user__image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.topnav__right-user__image > img {
+    width: 100%;
+}
+
+.topnav__right-user__name {
+    font-size: .9rem;
+    font-weight: 600;
+}

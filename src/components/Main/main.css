@@ -1,0 +1,17 @@
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px;
+
+}
+
+.cardbody {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.space {
+    margin: 10px unset;
+}

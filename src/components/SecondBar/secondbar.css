@@ -1,0 +1,10 @@
+.secondbar {
+    min-height: 20vh;
+    max-width: 28vw;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+
