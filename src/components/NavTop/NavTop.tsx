@@ -1,28 +1,30 @@
 import React from 'react'
 import "./navtop.css"
+import SearchIcon from "../../assets/searchicon.svg"
+import BELL from "../../assets/notifybell.svg"
+import PROFILE from "../../assets/profileicon.svg"
 
 const NavTop = () => {
     return (
         <div className="topnav">
-            <div  className="topnav__right"></div>
+            <div className="topnav__right"></div>
             <div className="topnav__search">
                 <input type="text" name="search" placeholder="Search  anything..." />
-                <i className="bx bx-search"></i>
+                <img src={SearchIcon} alt="" className="bx bx-search" style={{paddingRight:'20px'}} />
             </div>
 
             <div className="topnav__right">
                 <div className="topnav__right-item">
-                    <a href="#">Click</a>
+                    <img src={BELL} alt="" />
                 </div>
 
                 <div className="topnav__right-item">
-                    {/* dropdown here  */}
-                    <a href="#">ClickAble</a>
+                    <img src={PROFILE} alt="" />
                 </div>
 
-                <div className="topnav__right-item">
-                    <a href="#">ClickAble</a>
-                </div>
+                {/* <div className="topnav__right-item">
+                    <a href="#">icon</a>
+                </div> */}
             </div>
         </div>
     )

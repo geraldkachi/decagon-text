@@ -1,5 +1,7 @@
 import React from 'react'
 import "./cards.css"
+import CardChart from "../../assets/cardlineicon.svg"
+import Star from "../../assets/cardstar.svg"
 
 interface CardsTypes {
     title: string
@@ -10,16 +12,18 @@ interface CardsTypes {
 
 const Cards = () => {
     return (
-        <div style={{ display: 'flex', alignItems: 'center', flexWrap:'wrap' }}>
+        <div className='cardpareent'>
             <div className='card'>
                 <div className='cardbody'>
-                    <div className="cardinner">
-                        <p>Task Completed</p>
+                    <div className="cardinner" style={{ display: 'flex', alignItems: 'center', borderBottom: '3px' }}>
+                        <p style={{ display: 'flex', alignItems: 'center', }}>
+                            <img src={Star} alt="star" />
+                            Task Completed</p>
                         <p>10</p>
                     </div>
-                    <br className='space' />
-                    <div className="cardinner">
-                        <p>ICON</p>
+                    <div className='space' />
+                    <div className="cardinner next">
+                        <img src={CardChart} alt="" />
                         <div>
                             <p>10+ <span>more</span></p>
                             <p>from last week</p>
@@ -27,7 +31,6 @@ const Cards = () => {
                     </div>
                 </div>
             </div>
-
         </div>
     )
 }

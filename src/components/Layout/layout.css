@@ -3,7 +3,7 @@
     /* color: #f3f4f8; */
     /* color: black; */
     overflow: hidden;
-    /* width: 100%; */
+    width: 100%;
 }
 
 .layout__content {
@@ -16,8 +16,7 @@
 
 .layout__content-main {
     width: 100%;
-    /* display: flex; */
-    flex: 1;
+    display: flex;
     /* background: #0155550; */
 }
 

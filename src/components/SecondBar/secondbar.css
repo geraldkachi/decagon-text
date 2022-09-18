@@ -1,10 +1,44 @@
 .secondbar {
-    min-height: 20vh;
-    max-width: 28vw;
-    transition: all 0.3s ease;
-    background-color: #ffffff;
-    padding: 20px;
-    overflow-x: hidden;
+  height: max-content;
+  width: 28vw;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 0 0 0 20px;
+  overflow-x: hidden;
+}
+
+.sideHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.secondbarInput {
+    margin-bottom: 5px;
+    border-bottom: 3px solid  #E7EDF1;
+}
+.secondbarInput > input {
+  box-shadow: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  height: 100%;
+  width: 84%;
+  display: flex;
+  padding: 10px 60px 10px 20px;
+  color: black;
+  font-size: 1rem;
+  background-color: #E7EDF1;
+}
+
+.secondbarInput > input::placeholder {
+  color: #015555;
+}
+
+.secondbarInput > label {
+    margin-bottom: 15px;
+    color: #738383;
 }
 
 
