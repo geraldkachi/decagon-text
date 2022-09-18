@@ -14,7 +14,7 @@ const Sidebar = () => {
             <div style={{ display: "flex", alignItems: 'center', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
 
                 <div className="sidebar__logo">
-                    <img src={TODO} alt="company logo" />
+                    <img src={TODO} alt="company logo" className='comapnylogo' />
                     TO-DO
                 </div>
 

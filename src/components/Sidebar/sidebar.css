@@ -7,10 +7,18 @@
   transition: all 0.3s ease;
   background-color: white;
 }
+.sidebar__logo  {
+  font-size: 16px;
+  font-weight: 600;
+}
 .sidebar__logo {
   flex-direction: column;
   display: flex;
   margin: 5px;
+}
+
+.comapnylogo {
+  transform: scale(.8);
 }
 
 .sidebar__logo .sidebar__item {

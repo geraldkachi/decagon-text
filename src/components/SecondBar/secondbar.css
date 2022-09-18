@@ -1,6 +1,6 @@
 .secondbar {
   height: max-content;
-  width: 28vw;
+  width: 20vw;
   transition: all 0.3s ease;
   background-color: #ffffff;
   padding: 20px;
@@ -14,9 +14,11 @@
   justify-content: space-between;
 }
 
-.secondbarInput {
-    margin-bottom: 5px;
+.secondbarInputBody {
+    padding-bottom: 20px;
     border-bottom: 3px solid  #E7EDF1;
+    width: 100%;
+
 }
 .secondbarInput > input {
   box-shadow: 10px;
@@ -24,7 +26,7 @@
   outline: none;
   border: none;
   height: 100%;
-  width: 84%;
+  width: 74%;
   display: flex;
   padding: 10px 60px 10px 20px;
   color: black;
@@ -41,4 +43,9 @@
     color: #738383;
 }
 
+.emoji {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 

@@ -2,6 +2,10 @@ import React from 'react'
 import "./cards.css"
 import CardChart from "../../assets/cardlineicon.svg"
 import Star from "../../assets/cardstar.svg"
+import Project from "../../assets/card2icon.svg"
+import Task from "../../assets/cardtask.svg"
+import CardChart2 from "../../assets/cardline2.svg"
+import CardChart3 from "../../assets/cardline3.svg"
 
 interface CardsTypes {
     title: string
@@ -17,7 +21,7 @@ const Cards = () => {
                 <div className='cardbody'>
                     <div className="cardinner" style={{ display: 'flex', alignItems: 'center', borderBottom: '3px' }}>
                         <p style={{ display: 'flex', alignItems: 'center', }}>
-                            <img src={Star} alt="star" />
+                            <img src={Star} alt="star"  className="cardline" />
                             Task Completed</p>
                         <p>10</p>
                     </div>
@@ -25,12 +29,52 @@ const Cards = () => {
                     <div className="cardinner next">
                         <img src={CardChart} alt="" />
                         <div>
-                            <p>10+ <span>more</span></p>
+                            <p><span className='ten'>10+</span> <span>more</span></p>
                             <p>from last week</p>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div className='card'>
+                <div className='cardbody'>
+                    <div className="cardinner" style={{ display: 'flex', alignItems: 'center', borderBottom: '3px' }}>
+                        <p style={{ display: 'flex', alignItems: 'center', }}>
+                            <img src={Task} alt="star"  className="cardline" />
+                            Task Completed</p>
+                        <p>10</p>
+                    </div>
+                    <div className='space' />
+                    <div className="cardinner next">
+                        <img src={CardChart2} alt="" />
+                        <div>
+                            <p><span className='ten'>10+</span> <span>more</span></p>
+                            <p>from last week</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='card'>
+                <div className='cardbody'>
+                    <div className="cardinner" style={{ display: 'flex', alignItems: 'center', borderBottom: '3px' }}>
+                        <p style={{ display: 'flex', alignItems: 'center', }}>
+                            <img src={Project} alt="star"  className="cardline" />
+                            Task Completed</p>
+                        <p>10</p>
+                    </div>
+                    <div className='space' />
+                    <div className="cardinner next">
+                        <img src={CardChart3} alt="" />
+                        <div>
+                            <p><span className='ten'>08+</span> <span>more</span></p>
+                            <p>from last week</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     )
 }

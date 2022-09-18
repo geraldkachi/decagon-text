@@ -1,4 +1,8 @@
 import "./secondbar.css"
+import EMOJI from "../../assets/🎉 😍 😁 🔥 😘 😉 😎 👩 🙄.svg"
+import LeftArrow from "../../assets/leftarrow.svg"
+import RightArrow from "../../assets/rightarrow.svg"
+import TodaySch from "../../assets/TodaySch"
 
 const SecondBar = () => {
     return (
@@ -7,20 +11,28 @@ const SecondBar = () => {
 
                 <p>Today's Scheudle</p>
 
-                <i>ICON</i>
+                <TodaySch />
             </div>
 
             <div>
                 <h3>New Task</h3>
-                <div className="secondbarInput">
-                    <label htmlFor="task title">Task Title</label>
-                    <input type="text" name="search" placeholder="Create new" />
-                    <i className="bx bx-search"></i>
+                <div className="secondbarInputBody">
+                    <div className="secondbarInput">
+                        <label htmlFor="task title">Task Title</label>
+                        <input type="text" name="search" placeholder="Create new" />
+                        <i className="bx bx-search"></i>
+                    </div>
+
+
+                    <p>Add collaborators</p>
+
+                    <div className="emoji">
+                        <img src={LeftArrow} alt="" />
+                        <img src={EMOJI} alt="emoji" />
+                        <img src={RightArrow} alt="" />
+                    </div>
                 </div>
 
-
-
-                <p>Add collaborators</p>
             </div>
         </div>
     )

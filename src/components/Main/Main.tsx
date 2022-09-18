@@ -10,18 +10,18 @@ const Main = () => {
                 <div style={{ flex: 1 }}>
                     <Cards />
                 </div>
-                <div style={{ flex: 1 }}>
+                {/* <div style={{ flex: 1 }}>
                     <Cards />
                 </div>
                 <div style={{ flex: 1 }}>
                     <Cards />
-                </div>
+                </div> */}
             </div>
 
 
 
             <table>
-                
+
             </table>
 
         </div>

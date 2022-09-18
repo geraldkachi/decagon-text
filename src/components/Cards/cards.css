@@ -1,5 +1,6 @@
 .cardpareent {
   display: flex;
+  color: #768396;
 }
 .cardpareent > * {
   flex: 1;
@@ -20,7 +21,6 @@
   width: 100%;
 }
 
-
 .cardinner {
   display: flex;
   align-items: center;
@@ -29,6 +29,11 @@
   flex: 1;
   gap: 20px;
 }
+.cardinner :nth-of-type(2) {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1E1E1E;
+}
 
 .cardinner > p {
   font-size: 16px;
@@ -36,16 +41,24 @@
 
 .cardinner > div > p {
   line-height: 0%;
-  font-size: 10px;
+  font-size: 16px;
+  text-align: right;
 }
 .cardinner > div > p > span {
-  font-size: 10px;
+  font-size: 16px;
+}
+
+.cardline {
+    margin-right: 10px;
 }
 
 .space {
-  margin: 10px unset;
+  padding: 10px 0;
   display: block;
   width: 100%;
-  border: 5px soild #EFF3F5;
+  border: 5px soild #E8EDF1;
+}
 
+.ten {
+  color: #299702;
 }
