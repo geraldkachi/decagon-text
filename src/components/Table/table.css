@@ -1,0 +1,36 @@
+.table-wrapper {
+    overflow-y: auto;
+    color: var(--txt-pre);
+  }
+
+  table {
+    width: 100%;
+    min-width: 300px;
+    border-spacing: 0;
+  }
+
+  thead {
+    /* background-color: var(--second-bg); */
+    background-color: var(--txt-pre);
+    color: white;
+  }
+
+  tr {
+    text-align: left;
+  }
+
+  th,
+  td {
+    text-transform: capitalize;
+    padding: 10px 10px;
+    font-size: 0.8rem;
+  }
+  td {
+    color: #464646;
+  }
+
+  tbody > tr:hover {
+    background-color: #fff8f7;
+    /* background-color: #FFF8F7; */
+    /* color: var(--txt-white); */
+  }
