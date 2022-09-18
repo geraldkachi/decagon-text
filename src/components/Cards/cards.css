@@ -29,7 +29,7 @@
   flex: 1;
   gap: 20px;
 }
-.cardinner :nth-of-type(2) {
+.teg :nth-of-type(2) {
     font-size: 22px;
     font-weight: bold;
     color: #1E1E1E;

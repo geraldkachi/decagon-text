@@ -26,13 +26,23 @@ const SecondBar = () => {
 
                     <p>Add collaborators</p>
 
+                    <p>Time To Complete</p>
+
                     <div className="emoji">
                         <img src={LeftArrow} alt="" />
                         <img src={EMOJI} alt="emoji" />
                         <img src={RightArrow} alt="" />
                     </div>
+
                 </div>
 
+                    <div className="secondbarInput">
+                        {/* <label htmlFor="task title">Task Title</label> */}
+                        <input type="text" name="search" placeholder="Start Date" />
+                        <i className="bx bx-search"></i>
+                    </div>
+
+                    
             </div>
         </div>
     )
