@@ -1,0 +1,36 @@
+[
+	{
+		"id": 1,
+		"name": "Adimora Augustine Onyekachi",
+		"email": "fitzgeraldkachi@gmail.com",
+		"location": "Lagos",
+		"hours": "+234 917 324 0950",
+		"total_spend": "$557248.44",
+		"total_orders": 24011
+	},
+	{
+		"id": 2,
+		"name": "User journey of the project",
+		"email": "Jan 1, 2022",
+		"location": "Jan 31, 2022",
+		"hours": "80",
+		"total_spend": "progress"
+	},
+	{
+		"id": 3,
+		"name": "Wireframing the project",
+		"email": "Feb 1, 2022",
+		"location": "Feb 1, 2022",
+		"hours": "80",
+		"total_spend": "progress"
+	},
+	{
+		"id": 4,
+		"name": "User interface design",
+		"email": "March 1, 2022",
+		"location": "March 31, 2022",
+		"hours": "80",
+		"total_spend": "$335862.78",
+		"total_orders": 78768
+	}
+]

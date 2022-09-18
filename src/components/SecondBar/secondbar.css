@@ -1,6 +1,6 @@
 .secondbar {
   height: max-content;
-  width: 20vw;
+  width: 22vw;
   transition: all 0.3s ease;
   background-color: #ffffff;
   padding: 20px;
@@ -107,6 +107,7 @@
   display: flex;
   align-items: center;
   justify-content: start;
+  margin-bottom: 20px;
 }
 
 .msgprofile img {
@@ -115,4 +116,44 @@
 
 .smgText {
   line-height: 2px;
+
+}
+.smgText :nth-of-type(1) {
+  font-weight: bold;
+}
+.smgText :nth-of-type(2) {
+  font-size: 14px;
+  color: #768396;
+}
+
+.sideSubtitle {
+  color: #768396;
+}
+
+
+/* chip */
+.chip {
+  /* Center the content */
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  margin-right: 20px;
+
+  /* Background color */
+  /* background-color: rgba(0, 0, 0, 0.1); */
+
+  /* Rounded border */
+  border-radius: 9999px;
+
+  /* Spacing */
+  padding: 4px 8px;
+}
+
+.chip__content {
+  margin-right: 4px;
+  padding: 0 5px;
+}
+
+.chipplusright {
+  margin: 0 10px;
 }

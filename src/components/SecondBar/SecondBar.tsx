@@ -5,6 +5,11 @@ import RightArrow from "../../assets/rightarrow.svg"
 import StartDate from "../../assets/datasvg.svg"
 import MSGSvg1 from "../../assets/msgscg1.svg"
 import MSGSvg2x from "../../assets/msgsvg.svg"
+import PlusChip from "../../assets/chipplus.svg"
+import RightChip from "../../assets/chipright.svg"
+import CancelP from "../../assets/xchipP.svg"
+import CancelB from "../../assets/xchipb.svg"
+
 import TodaySch from "../../assets/TodaySch"
 
 const SecondBar = () => {
@@ -17,7 +22,7 @@ const SecondBar = () => {
                 <TodaySch />
             </div>
 
-            <div style={{borderBottom:'5px', borderColor:'#E8EDF1', margin: '0px 0'}}>
+            <div style={{ borderBottom: '5px', borderColor: '#E8EDF1', margin: '0px 0' }}>
                 <h3>New Task</h3>
                 <div className="secondbarInputBody">
                     <div style={{ marginTop: '20px' }}>
@@ -25,16 +30,33 @@ const SecondBar = () => {
                             <input type="text" name="search" placeholder="Create new" />
                         </div>
                     </div>
-                    {/* <div className="secondbarInput">
-                        <label htmlFor="task title">Task Title</label>
-                        <input type="text" name="search" placeholder="Create new" />
-                        <i className="bx bx-search"></i>
-                    </div> */}
 
 
-                    <p>Add collaborators</p>
+                    <p className="sideSubtitle">Add collaborators</p>
 
-                    <p>Time To Complete</p>
+                    <div style={{ display: 'flex', alignItems: 'center' }}>
+
+                        <div className="chip" style={{ background: '#E8E8FF', color: '#5051F9' }}>
+                            <div className="chip__content">
+                                Angela
+                            </div>
+                            <img src={CancelP} alt="" />
+                        </div>
+
+
+                        <div className="chip" style={{ background: '#E5F5FF', color: '#1EA7FF' }}>
+                            <div className="chip__content">
+                                Chris
+                            </div>
+                            <img src={CancelB} alt="" />
+                        </div>
+
+                        <img src={PlusChip} alt="" className="chipplusright" />
+                        <img src={RightChip} alt="" className="chipplusright" />
+
+                    </div>
+
+                    <p className="sideSubtitle">Time To Complete</p>
 
                     <div className="emoji">
                         <img src={LeftArrow} alt="" />
@@ -45,11 +67,7 @@ const SecondBar = () => {
                 </div>
 
 
-
-
-
-
-                <div style={{ marginTop: '20px' }}>
+                {/* <div style={{ marginTop: '20px' }}>
                     <div className="inputBody">
                         <input type="text" name="search" placeholder="Start Date" />
                         <img src={StartDate} alt="" className="bx bx-search" style={{ paddingRight: '20px' }} />
@@ -69,7 +87,7 @@ const SecondBar = () => {
                     <div className="inputBody">
                         <input type="text" name="search" placeholder="Enter Hours" />
                     </div>
-                </div>
+                </div> */}
 
 
                 <div className="buttonleft">
@@ -90,7 +108,7 @@ const SecondBar = () => {
                     </div>
 
                     <div className="msgprofile">
-                        <img src={MSGSvg1} alt="" />
+                        <img src={MSGSvg2x} alt="" />
 
                         <div className="smgText">
                             <p>Chris Webber</p>

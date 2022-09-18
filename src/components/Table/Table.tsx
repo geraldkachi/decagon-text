@@ -1,14 +1,11 @@
-
-
-import { useState, useEffect } from 'react'
 import './table.css'
 
 interface Props<T = any> {
     limit?: number
     headData?: string[]
     bodyData?: any;
-    renderBody?: (n: any, b: number) => JSX.Element
-    renderHead?: (n: any, b: number) => JSX.Element
+    renderBody: (n: any, b: number) => JSX.Element
+    renderHead: (n: any, b: number) => JSX.Element
     isSuccess?: boolean
     isFetching?: boolean
 }
