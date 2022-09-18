@@ -38,17 +38,18 @@ const Main = () => {
                 <div style={{ flex: 1 }}>
                     <Cards />
                 </div>
-                {/* <div style={{ flex: 1 }}>
-                    <Cards />
-                </div>
-                <div style={{ flex: 1 }}>
-                    <Cards />
-                </div> */}
             </div>
 
 
-
             <div className='tablebody'>
+
+                <div className="taskseperate">
+                    <h3>Task</h3>
+
+                    <select name="" id="" style={{padding:'10px', borderRadius:'10px', background:'#E8EDF1', borderColor:'#4BA8A8'}}>
+                        <option value="" style={{color:'#738383'}}>Last 7 days</option>
+                    </select>
+                </div>
 
                 <Table
                     headData={customerTableHead}

@@ -66,28 +66,30 @@ const SecondBar = () => {
 
                 </div>
 
+                <div style={{ overflow: 'hidden' }}>
 
-                {/* <div style={{ marginTop: '20px' }}>
-                    <div className="inputBody">
-                        <input type="text" name="search" placeholder="Start Date" />
-                        <img src={StartDate} alt="" className="bx bx-search" style={{ paddingRight: '20px' }} />
+                    <div style={{ marginTop: '20px' }}>
+                        <div className="inputBody">
+                            <input type="text" name="search" placeholder="Start Date" />
+                            <img src={StartDate} alt="" className="bx bx-search" style={{ paddingRight: '20px' }} />
+                        </div>
+                    </div>
+
+                    <div style={{ marginTop: '20px' }}>
+                        <div className="inputBody">
+                            <input type="text" name="search" placeholder="End Date" />
+                            <img src={StartDate} alt="" className="bx bx-search" style={{ paddingRight: '20px' }} />
+                        </div>
+                    </div>
+
+                    <p>Hours Budgeted</p>
+
+                    <div style={{ marginTop: '20px' }}>
+                        <div className="inputBody">
+                            <input type="text" name="search" placeholder="Enter Hours" />
+                        </div>
                     </div>
                 </div>
-
-                <div style={{ marginTop: '20px' }}>
-                    <div className="inputBody">
-                        <input type="text" name="search" placeholder="End Date" />
-                        <img src={StartDate} alt="" className="bx bx-search" style={{ paddingRight: '20px' }} />
-                    </div>
-                </div>
-
-                <p>Hours Budgeted</p>
-
-                <div style={{ marginTop: '20px' }}>
-                    <div className="inputBody">
-                        <input type="text" name="search" placeholder="Enter Hours" />
-                    </div>
-                </div> */}
 
 
                 <div className="buttonleft">

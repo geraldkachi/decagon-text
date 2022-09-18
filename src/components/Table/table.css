@@ -17,11 +17,11 @@
 
   tr {
     text-align: left;
-    border-bottom: 3px solid black;
   }
 
   th,
   td {
+    border-bottom: 1px solid #E8EDF1;
     text-transform: capitalize;
     padding: 10px 10px;
     /* font-size: 0.8rem; */

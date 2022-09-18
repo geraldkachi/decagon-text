@@ -3,7 +3,6 @@
   padding: 20px;
   border-radius: 20px;
   margin: 20px;
-
 }
 
 .cardbody {
@@ -13,11 +12,26 @@
 }
 
 .space {
-    margin: 10px unset;
+  margin: 10px unset;
 }
 
 .tablebody {
-    background-color: white;
-    padding: 20px 0;
-    margin: 40px 0;
+  background-color: white;
+  padding: 5px 0 20;
+  margin: 40px 0px 0 20px;
+  border-radius: 20px;
+}
+
+.taskseperate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.selectorinput {
+    padding:'10px';
+    border-radius:'10px';
+    background:'#738383';
+    /* border: 1px solid'#4BA8A8'; */
 }
