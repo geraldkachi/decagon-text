@@ -2,6 +2,9 @@ import "./secondbar.css"
 import EMOJI from "../../assets/🎉 😍 😁 🔥 😘 😉 😎 👩 🙄.svg"
 import LeftArrow from "../../assets/leftarrow.svg"
 import RightArrow from "../../assets/rightarrow.svg"
+import StartDate from "../../assets/datasvg.svg"
+import MSGSvg1 from "../../assets/msgscg1.svg"
+import MSGSvg2x from "../../assets/msgsvg.svg"
 import TodaySch from "../../assets/TodaySch"
 
 const SecondBar = () => {
@@ -14,14 +17,19 @@ const SecondBar = () => {
                 <TodaySch />
             </div>
 
-            <div>
+            <div style={{borderBottom:'5px', borderColor:'#E8EDF1', margin: '0px 0'}}>
                 <h3>New Task</h3>
                 <div className="secondbarInputBody">
-                    <div className="secondbarInput">
+                    <div style={{ marginTop: '20px' }}>
+                        <div className="inputBody">
+                            <input type="text" name="search" placeholder="Create new" />
+                        </div>
+                    </div>
+                    {/* <div className="secondbarInput">
                         <label htmlFor="task title">Task Title</label>
                         <input type="text" name="search" placeholder="Create new" />
                         <i className="bx bx-search"></i>
-                    </div>
+                    </div> */}
 
 
                     <p>Add collaborators</p>
@@ -36,13 +44,63 @@ const SecondBar = () => {
 
                 </div>
 
-                    <div className="secondbarInput">
-                        {/* <label htmlFor="task title">Task Title</label> */}
+
+
+
+
+
+                <div style={{ marginTop: '20px' }}>
+                    <div className="inputBody">
                         <input type="text" name="search" placeholder="Start Date" />
-                        <i className="bx bx-search"></i>
+                        <img src={StartDate} alt="" className="bx bx-search" style={{ paddingRight: '20px' }} />
+                    </div>
+                </div>
+
+                <div style={{ marginTop: '20px' }}>
+                    <div className="inputBody">
+                        <input type="text" name="search" placeholder="End Date" />
+                        <img src={StartDate} alt="" className="bx bx-search" style={{ paddingRight: '20px' }} />
+                    </div>
+                </div>
+
+                <p>Hours Budgeted</p>
+
+                <div style={{ marginTop: '20px' }}>
+                    <div className="inputBody">
+                        <input type="text" name="search" placeholder="Enter Hours" />
+                    </div>
+                </div>
+
+
+                <div className="buttonleft">
+                    <button>Save</button>
+                </div>
+
+                <div>
+                    <p className="msg">Messages</p>
+
+
+                    <div className="msgprofile">
+                        <img src={MSGSvg1} alt="" />
+
+                        <div className="smgText">
+                            <p>Chris Webber</p>
+                            <p>Hi Michael! How are You?</p>
+                        </div>
                     </div>
 
-                    
+                    <div className="msgprofile">
+                        <img src={MSGSvg1} alt="" />
+
+                        <div className="smgText">
+                            <p>Chris Webber</p>
+                            <p>Do you need that design??</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
     )

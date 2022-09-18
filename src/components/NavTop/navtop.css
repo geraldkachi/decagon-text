@@ -10,8 +10,8 @@
 .topnav__search {
     position: relative;
     height: 50px;
-    background-color: #E7EDF1;;
-    border-radius: 5px;
+    background-color:  #F3F7FA;;
+    border-radius: 7px;
     display: flex;
     align-items: center;
     box-shadow: 10px;
@@ -27,7 +27,8 @@
     padding: 10px 60px 10px 20px;
     color: black;
     font-size: 1rem;
-    background-color: #E7EDF1;
+    background-color: #F3F7FA;
+    /* background-color: #E8EDF1; */
 }
 .topnav__search > input::placeholder {
     color: #015555;

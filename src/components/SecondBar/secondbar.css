@@ -15,14 +15,13 @@
 }
 
 .secondbarInputBody {
-    padding-bottom: 20px;
-    border-bottom: 3px solid  #E7EDF1;
-    width: 100%;
-
+  padding-bottom: 20px;
+  border-bottom: 3px solid #e7edf1;
+  width: 100%;
 }
 .secondbarInput > input {
   box-shadow: 10px;
-  border-radius: 10px;
+  border-radius: 7px;
   outline: none;
   border: none;
   height: 100%;
@@ -31,7 +30,7 @@
   padding: 10px 60px 10px 20px;
   color: black;
   font-size: 1rem;
-  background-color: #E7EDF1;
+  background-color: #e7edf1;
 }
 
 .secondbarInput > input::placeholder {
@@ -39,13 +38,77 @@
 }
 
 .secondbarInput > label {
-    margin-bottom: 15px;
-    color: #738383;
+  margin-bottom: 15px;
+  color: #738383;
 }
 
 .emoji {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.inputBody {
+  position: relative;
+  height: 50px;
+  background-color: #e8edf1;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  box-shadow: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.inputBody > input {
+  outline: none;
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding: 10px 60px 10px 20px;
+  color: black;
+  font-size: 1rem;
+  /* background-color: #E7EDF1; */
+  background-color: #e8edf1;
+}
+.inputBody > input::placeholder {
+  color: #015555;
+}
+
+.inputBody > input:focus {
+  outline: none;
+}
+
+.inputBody > i {
+  position: absolute;
+  right: 20px;
+  font-size: 1rem;
+}
+
+.buttonleft {
+  display: flex;
+  justify-content: end;
+}
+
+.buttonleft button {
+  background-color: #e3e8ee;
+  color: white;
+  /* padding: 20px; */
+  margin: 20px 0;
+}
+
+.msg {
+  color: #005555;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.msgprofile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.smgText {
+  line-height: 2px;
+}
