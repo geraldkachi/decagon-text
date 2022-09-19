@@ -19,7 +19,7 @@ const Cards = () => {
         <div className='cardpareent'>
             <div className='card'>
                 <div className='cardbody'>
-                    <div className="cardinner teg" style={{ display: 'flex', alignItems: 'center', borderBottom: '3px' }}>
+                    <div className="cardinner teg" style={{ display: 'flex', alignItems: 'center', borderBottom: 'solid', borderColor:'#E8EDF1', borderWidth:'1px' }}>
                         <p style={{ display: 'flex', alignItems: 'center', }}>
                             <img src={Star} alt="star"  className="cardline" />
                             Task Completed</p>
@@ -38,7 +38,7 @@ const Cards = () => {
 
             <div className='card'>
                 <div className='cardbody'>
-                    <div className="cardinner teg" style={{ display: 'flex', alignItems: 'center', borderBottom: '3px' }}>
+                    <div className="cardinner teg"  style={{ display: 'flex', alignItems: 'center', borderBottom: 'solid', borderColor:'#E8EDF1', borderWidth:'1px' }}>
                         <p style={{ display: 'flex', alignItems: 'center', }}>
                             <img src={Task} alt="star"  className="cardline" />
                             Task Completed</p>
@@ -57,7 +57,7 @@ const Cards = () => {
 
             <div className='card'>
                 <div className='cardbody'>
-                    <div className="cardinner teg" style={{ display: 'flex', alignItems: 'center', borderBottom: '3px' }}>
+                    <div className="cardinner teg"  style={{ display: 'flex', alignItems: 'center', borderBottom: 'solid', borderColor:'#E8EDF1', borderWidth:'1px' }}>
                         <p style={{ display: 'flex', alignItems: 'center', }}>
                             <img src={Project} alt="star"  className="cardline" />
                             Task Completed</p>

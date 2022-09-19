@@ -1,7 +1,5 @@
 
 .layout {
-    /* color: #f3f4f8; */
-    /* color: black; */
     overflow: hidden;
     width: 100%;
 }
@@ -9,7 +7,6 @@
 .layout__content {
     padding-left: 6vw;
     background-color: #f3f4f8;
-    /* background-color: blue; */
     min-height: 100vh;
 
 }

@@ -50,13 +50,12 @@
 
 .inputBody {
   position: relative;
-  height: 50px;
+  height: 40px;
   background-color: #e8edf1;
   border-radius: 7px;
   display: flex;
   align-items: center;
   box-shadow: 10px;
-  border-radius: 20px;
   overflow: hidden;
 }
 
