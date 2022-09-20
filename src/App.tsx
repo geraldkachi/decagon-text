@@ -1,19 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
-// import NavTop from './components/NavTop/NavTop'
 import Layout from './components/Layout/Layout'
 import SecondBar from './components/SecondBar/SecondBar'
+import { Route, Routes } from 'react-router-dom'
+import Home from './components/Home/Home'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className='' style={{display: "flex",minWidth: "100vw"}}>
-    <Layout>
-
-    </Layout>
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+      </Route>
+    </Routes>
   )
 
 }

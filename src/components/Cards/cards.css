@@ -1,11 +1,8 @@
 .cardpareent {
-  display: flex;
+  /* display: flex; */
   color: #768396;
 }
-.cardpareent > * {
-  flex: 1;
-  flex-basis: 100%;
-}
+
 .card {
   background: white;
   padding: 20px;

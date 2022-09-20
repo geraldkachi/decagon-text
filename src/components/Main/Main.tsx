@@ -95,20 +95,14 @@ const Main = () => {
     )
 
     return (
-        <div style={{ flex: 1, background: '', gap: "10px", margin: '20px' }}>
-
-            <div style={{ display: 'flex', alignItems: 'center' }}>
-                <div style={{ flex: 1 }}>
-                    <Cards />
-                </div>
+        <div >
+            <div className="row">
+                <Cards />
             </div>
-
 
             <LineChart chartData={userData} />
 
-
             <div className='tablebody'>
-
                 <div className="taskseperate">
                     <h3>Task</h3>
 

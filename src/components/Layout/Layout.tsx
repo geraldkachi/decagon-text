@@ -1,15 +1,10 @@
-import { ReactNode } from 'react'
 import "./layout.css"
 import Sidebar from '../Sidebar/Sidebar'
 import NavTop from '../NavTop/NavTop'
-import SecondBar from '../SecondBar/SecondBar'
-import Main from '../Main/Main'
+import { Outlet } from 'react-router-dom'
+import SecondBar from "../SecondBar/SecondBar"
 
-interface IProps {
-    children?: ReactNode
-}
-
-const Layout = ({ children }: IProps) => {
+const Layout = () => {
     return (
         <>
             <div className={`layout`}>
@@ -17,9 +12,8 @@ const Layout = ({ children }: IProps) => {
                 <div className="layout__content">
                     <NavTop />
                     <div className="layout__content-main">
-                        <Main />
-                        {children}
-                        <SecondBar />
+                        <Outlet />
+                        {/* <SecondBar /> */}
                     </div>
                 </div>
             </div>

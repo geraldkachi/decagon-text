@@ -16,8 +16,8 @@ interface CardsTypes {
 
 const Cards = () => {
     return (
-        <div className='cardpareent'>
-            <div className='card'>
+        <div className='cardpareent row'>
+            <div className='card col-4'>
                 <div className='cardbody'>
                     <div className="cardinner teg" style={{ display: 'flex', alignItems: 'center', borderBottom: 'solid', borderColor:'#E8EDF1', borderWidth:'1px' }}>
                         <p style={{ display: 'flex', alignItems: 'center', }}>
@@ -36,7 +36,7 @@ const Cards = () => {
                 </div>
             </div>
 
-            <div className='card'>
+            <div className='card col-4'>
                 <div className='cardbody'>
                     <div className="cardinner teg"  style={{ display: 'flex', alignItems: 'center', borderBottom: 'solid', borderColor:'#E8EDF1', borderWidth:'1px' }}>
                         <p style={{ display: 'flex', alignItems: 'center', }}>
@@ -55,7 +55,7 @@ const Cards = () => {
                 </div>
             </div>
 
-            <div className='card'>
+            <div className='card col-4'>
                 <div className='cardbody'>
                     <div className="cardinner teg"  style={{ display: 'flex', alignItems: 'center', borderBottom: 'solid', borderColor:'#E8EDF1', borderWidth:'1px' }}>
                         <p style={{ display: 'flex', alignItems: 'center', }}>
