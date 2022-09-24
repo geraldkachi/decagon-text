@@ -1,6 +1,6 @@
 .sidebar {
   height: 100vh;
-  min-width: 6vw;
+  /* min-width: 6vw; */
   position: fixed;
   left: 0;
   top: 0;
@@ -10,6 +10,7 @@
 .sidebar__logo  {
   font-size: 16px;
   font-weight: 600;
+  color:  #015555;
 }
 .sidebar__logo {
   flex-direction: column;

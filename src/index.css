@@ -5,7 +5,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  /* color: rgba(255, 255, 255, 0.87); */
   background-color: #242424;
 
   font-synthesis: none;
@@ -17,11 +17,11 @@
 
 a {
   font-weight: 500;
-  color: black;
+  /* color: black; */
   text-decoration: inherit;
 }
 a:hover {
-  color: black;
+  /* color: black; */
 }
 
 * {
@@ -73,10 +73,11 @@ button:focus-visible {
 
 .row > * {
   flex-shrink: 0;
-  /* flex: 1; */
+  flex: 1;
   width: 100%;
   max-width: 100%;
   row-gap: 10px;
+  margin-top: 10px;
 }
 
 /* [class*="col-"] {

@@ -107,7 +107,7 @@
   display: flex;
   align-items: center;
   justify-content: start;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .msgprofile img {
@@ -115,21 +115,23 @@
 }
 
 .smgText {
-  line-height: 2px;
+  line-height: 12px;
+  /* background: black; */
 
 }
 .smgText :nth-of-type(1) {
   font-weight: bold;
+  color: #005555;
 }
 .smgText :nth-of-type(2) {
   font-size: 14px;
   color: #768396;
+  margin-top: 9px;
 }
 
 .sideSubtitle {
   color: #768396;
 }
-
 
 /* chip */
 .chip {

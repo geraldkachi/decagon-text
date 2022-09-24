@@ -11,7 +11,8 @@
 }
 
 .layout__content-main {
-    padding: 20px;
+    padding: 6vw;
+
 }
 
 @media only screen and (max-width: 800px) {

@@ -12,32 +12,32 @@ export const UserData = [
     {
         id: 1,
         day: "Mon",
-        adsWatched: 0,
+        adsWatched: 100,
         userLost: 0,
     },
     {
         id: 2,
         day: "Tue",
-        adsWatched: 0,
-        userLost: 0,
+        adsWatched: 230,
+        userLost: 220,
     },
     {
         id: 3,
         day: "Wed",
-        adsWatched: 0,
+        adsWatched: 110,
         userLost: 0,
     },
     {
         id: 4,
         day: "Thu",
-        adsWatched: 0,
-        userLost: 0,
+        adsWatched: 190,
+        userLost: 220,
     },
     {
         id: 5,
         day: "Fri",
-        adsWatched: 0,
-        userLost: 0,
+        adsWatched: 401,
+        userLost: 101,
     },
     {
         id: 6,
@@ -49,6 +49,51 @@ export const UserData = [
         id: 7,
         day: "Sun",
         adsWatched: 0,
+        userLost: 0,
+    },
+];
+
+export const UserData1 = [
+    {
+        id: 1,
+        day: "Mon",
+        adsWatched: 290,
+        userLost: 0,
+    },
+    {
+        id: 2,
+        day: "Tue",
+        adsWatched: 20,
+        userLost: 220,
+    },
+    {
+        id: 3,
+        day: "Wed",
+        adsWatched: 110,
+        userLost: 0,
+    },
+    {
+        id: 4,
+        day: "Thu",
+        adsWatched: 70,
+        userLost: 220,
+    },
+    {
+        id: 5,
+        day: "Fri",
+        adsWatched: 101,
+        userLost: 101,
+    },
+    {
+        id: 6,
+        day: "Sat",
+        adsWatched: 200,
+        userLost: 0,
+    },
+    {
+        id: 7,
+        day: "Sun",
+        adsWatched: 230,
         userLost: 0,
     },
 ];
@@ -71,13 +116,21 @@ const Main = () => {
         labels: UserData.map((data) => data.day.toUpperCase()),
         datasets: [
             {
-                label: "Ads Watched",
+                label: "Green",
                 data: UserData.map((data) => data.adsWatched),
-                backgroundColor: "#2a71d0",
-                borderColor: "#2a71d0",
+                // backgroundColor: "",
+                borderColor: "#4BA8A8",
+                borderWidth: 2,
+            },
+            {
+                label: "Yellow",
+                data: UserData1.map((data) => data.adsWatched),
+                // backgroundColor: "",
+                borderColor: "#F8B400",
                 borderWidth: 2,
             },
         ],
+
     })
 
     const renderHead = (item: any, index: number) => <th style={{ color: '#768396', fontSize: '14px' }} key={index}>{item}</th>
@@ -96,10 +149,7 @@ const Main = () => {
 
     return (
         <div >
-            <div className="row">
-                <Cards />
-            </div>
-
+            <Cards />
             <LineChart chartData={userData} />
 
             <div className='tablebody'>

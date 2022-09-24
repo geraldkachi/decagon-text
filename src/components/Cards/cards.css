@@ -23,7 +23,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  flex: 1;
+  /* flex: 1; */
   gap: 20px;
 }
 .teg :nth-of-type(2) {
@@ -37,7 +37,7 @@
 }
 
 .cardinner > div > p {
-  line-height: 0%;
+  line-height: 20px;
   font-size: 16px;
   text-align: right;
 }
@@ -58,4 +58,5 @@
 
 .ten {
   color: #299702;
+  margin-bottom: 10px;
 }
