@@ -4,7 +4,7 @@ import SecondBar from '../SecondBar/SecondBar'
 
 const Home = () => {
     return (
-        <div style={{display:'flex'}}>
+        <div style={{display:'block'}}>
             <Main />
             <SecondBar />
         </div>

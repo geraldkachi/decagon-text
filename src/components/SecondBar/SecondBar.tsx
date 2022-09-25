@@ -19,7 +19,7 @@ const SecondBar = () => {
         <div className='secondbar'>
             <div className='sideHeader'>
 
-                <p>Today's Scheudle</p>
+                <p style={{color: "#005555", fontSize:'20px', margin:'20px 0'}}>Today's Scheudle</p>
 
                 <TodaySch />
             </div>
@@ -59,6 +59,8 @@ const SecondBar = () => {
                         <img src={RightChip} alt="" className="chipplusright" />
 
                     </div>
+
+                    <div style={{borderBottom: '3px solid #E8EDF1', margin:'10px 0' }} />
 
                     <p className="sideSubtitle">Time To Complete</p>
 
