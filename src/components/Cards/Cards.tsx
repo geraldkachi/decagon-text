@@ -19,13 +19,14 @@ const Cards = () => {
             <div className='cardpareent row'>
                 <div className='card col-3'>
                     <div className='cardbody'>
-                        <div className="cardinner teg" style={{ display: 'flex', alignItems: 'center', borderBottom: 'solid', borderColor: '#E8EDF1', borderWidth: '1px' }}>
+                        <div className="cardinner teg" style={{ display: 'flex', alignItems: 'center', borderBottom: 'solid', borderColor: '#E8EDF1', borderWidth: '1px', paddingBottom:'20px', marginBottom: '20px' }}>
                             <p style={{ display: 'flex', alignItems: 'center', }}>
                                 <img src={Star} alt="star" className="cardline" />
                                 Task Completed</p>
                             <p>10</p>
                         </div>
-                        <div className='space' />
+
+                        <hr className='space' style={{ borderBottom: 'solid', borderColor: '#E8EDF1', borderWidth: '1px' }} />
                         <div className="cardinner next">
                             <img src={CardChart} alt="" />
                             <div>
@@ -38,13 +39,13 @@ const Cards = () => {
 
                 <div className='card col-3'>
                     <div className='cardbody'>
-                        <div className="cardinner teg" style={{ display: 'flex', alignItems: 'center', borderBottom: 'solid', borderColor: '#E8EDF1', borderWidth: '1px' }}>
+                        <div className="cardinner teg" style={{ display: 'flex', alignItems: 'center', borderBottom: 'solid', borderColor: '#E8EDF1', borderWidth: '1px', paddingBottom:'20px', marginBottom: '20px' }}>
                             <p style={{ display: 'flex', alignItems: 'center', }}>
                                 <img src={Task} alt="star" className="cardline" />
                                 Task Completed</p>
                             <p>10</p>
                         </div>
-                        <div className='space' />
+                        <hr className='space' style={{ borderBottom: 'solid', borderColor: '#E8EDF1', borderWidth: '1px' }} />
                         <div className="cardinner next">
                             <img src={CardChart2} alt="" />
                             <div>
@@ -57,13 +58,13 @@ const Cards = () => {
 
                 <div className='card col-3'>
                     <div className='cardbody'>
-                        <div className="cardinner teg" style={{ display: 'flex', alignItems: 'center', borderBottom: 'solid', borderColor: '#E8EDF1', borderWidth: '1px' }}>
+                        <div className="cardinner teg" style={{ display: 'flex', alignItems: 'center', borderBottom: 'solid', borderColor: '#E8EDF1', borderWidth: '1px', paddingBottom:'20px', marginBottom: '20px' }}>
                             <p style={{ display: 'flex', alignItems: 'center', }}>
                                 <img src={Project} alt="star" className="cardline" />
                                 Task Completed</p>
                             <p>10</p>
                         </div>
-                        <div className='space' />
+                        <hr className='space' style={{ borderBottom: 'solid', borderColor: '#E8EDF1', borderWidth: '1px' }} />
                         <div className="cardinner next">
                             <img src={CardChart3} alt="" />
                             <div>
