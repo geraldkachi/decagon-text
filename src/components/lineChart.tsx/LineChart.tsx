@@ -48,6 +48,7 @@ export const options = {
             },
         },
     },
+    tension: 0.3
 };
 
 const labels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", 'July'];
@@ -71,7 +72,7 @@ const data = {
             fill: false,
             borderColor: "#F8B400"
         }
-    ]
+    ],
 };
 
 
