@@ -1,6 +1,6 @@
 .secondbar {
   height: max-content;
-  /* width: 100vw; */
+  width: 100%;
   /* width: 22vw; */
   min-width: 296px;
   transition: all 0.3s ease;
@@ -173,6 +173,7 @@
   padding: 0 5px;
   display: flex;
   align-items: center;
+  font-size: 14px;
 }
 
 .chipplusright {
