@@ -178,3 +178,9 @@
 .chipplusright {
   margin: 0 10px;
 }
+
+.chipscroll {
+  display: flex ;
+  align-items: center;
+  overflow-x: scroll;
+}

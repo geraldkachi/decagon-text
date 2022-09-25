@@ -38,7 +38,7 @@ const SecondBar = () => {
 
                     <p className="sideSubtitle">Add collaborators</p>
 
-                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <div className="chipscroll">
 
                         <div className="chip" style={{ background: '#E8E8FF', color: '#5051F9' }}>
                             <div className="chip__content">
@@ -90,7 +90,7 @@ const SecondBar = () => {
                         </div>
                     </div>
 
-                    <p>Hours Budgeted</p>
+                    <p className="sideSubtitle">Hours Budgeted</p>
 
                     <div style={{ marginTop: '20px' }}>
                         <div className="inputBody">
