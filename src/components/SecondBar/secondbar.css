@@ -1,8 +1,8 @@
 .secondbar {
   height: max-content;
-  width: 100vw;
+  /* width: 100vw; */
   /* width: 22vw; */
-  min-width: 396px;
+  min-width: 296px;
   transition: all 0.3s ease;
   background-color: #ffffff;
   padding: 20px;
@@ -18,7 +18,7 @@
 }
 
 @media only screen and (max-width: 00px) {
-  
+
 }
 
 
