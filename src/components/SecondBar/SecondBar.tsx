@@ -3,8 +3,10 @@ import EMOJI from "../../assets/🎉 😍 😁 🔥 😘 😉 😎 👩 🙄.svg
 import LeftArrow from "../../assets/leftarrow.svg"
 import RightArrow from "../../assets/rightarrow.svg"
 import StartDate from "../../assets/datasvg.svg"
-import MSGSvg1 from "../../assets/msgscg1.svg"
-import MSGSvg2x from "../../assets/msgsvg.svg"
+
+import MSGSvg1 from "../../assets/msgimg1.svg"
+import MSGSvg2x from "../../assets/msgimg2.svg"
+
 import PlusChip from "../../assets/chipplus.svg"
 import RightChip from "../../assets/chipright.svg"
 import CancelP from "../../assets/xchipP.svg"

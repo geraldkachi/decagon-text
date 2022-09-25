@@ -7,48 +7,78 @@ import ThreeDots from "../../assets/threedots.svg"
 import LineChart from '../lineChart.tsx/LineChart'
 
 
-
+["Jan", "Feb", "Mar", "Apr", "May", "Jun", 'July', 'Aug', "Sep", "Oct", "Nov", "Dec"];
 export const UserData = [
     {
         id: 1,
-        day: "Mon",
+        day: "Jan",
         adsWatched: 100,
         userLost: 0,
     },
     {
         id: 2,
-        day: "Tue",
+        day: "Feb",
         adsWatched: 230,
         userLost: 220,
     },
     {
         id: 3,
-        day: "Wed",
+        day: "Mar",
         adsWatched: 110,
         userLost: 0,
     },
     {
         id: 4,
-        day: "Thu",
+        day: "Apr",
+        adsWatched: 110,
+        userLost: 0,
+    },
+    {
+        id: 5,
+        day: "May",
         adsWatched: 190,
         userLost: 220,
     },
     {
-        id: 5,
-        day: "Fri",
-        adsWatched: 401,
+        id: 6,
+        day: "Jun",
+        adsWatched: 201,
         userLost: 101,
     },
     {
-        id: 6,
-        day: "Sat",
+        id: 7,
+        day: "July",
         adsWatched: 0,
         userLost: 0,
     },
     {
-        id: 7,
-        day: "Sun",
-        adsWatched: 0,
+        id: 8,
+        day: "Aug",
+        adsWatched: 121,
+        userLost: 0,
+    },
+    {
+        id: 9,
+        day: "Sep",
+        adsWatched: 31,
+        userLost: 0,
+    },
+    {
+        id: 10,
+        day: "Oct",
+        adsWatched: 199,
+        userLost: 0,
+    },
+    {
+        id: 11,
+        day: "Nov",
+        adsWatched: 219,
+        userLost: 0,
+    },
+    {
+        id: 12,
+        day: "Nov",
+        adsWatched: 199,
         userLost: 0,
     },
 ];
@@ -151,7 +181,7 @@ const Main = () => {
         <div >
             <Cards />
 
-            <div className="tablebody">
+            <div className="tablebody" style={{ height:''}}>
                 <LineChart chartData={userData} />
             </div>
 

@@ -51,7 +51,7 @@ export const options = {
     tension: 0.3
 };
 
-const labels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", 'July'];
+const labels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", 'July', 'Aug', "Sep", "Oct", "Nov", "Dec"];
 
 
 const data = {
