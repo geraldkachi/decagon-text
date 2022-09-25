@@ -1,6 +1,6 @@
 .sidebar {
   height: 100vh;
-  /* min-width: 6vw; */
+  min-width: 4vw;
   position: fixed;
   left: 0;
   top: 0;

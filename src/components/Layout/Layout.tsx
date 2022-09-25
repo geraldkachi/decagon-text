@@ -2,7 +2,6 @@ import "./layout.css"
 import Sidebar from '../Sidebar/Sidebar'
 import NavTop from '../NavTop/NavTop'
 import { Outlet } from 'react-router-dom'
-import SecondBar from "../SecondBar/SecondBar"
 
 const Layout = () => {
     return (
@@ -13,7 +12,6 @@ const Layout = () => {
                     <NavTop />
                     <div className="layout__content-main">
                         <Outlet />
-                        <SecondBar />
                     </div>
                 </div>
             </div>

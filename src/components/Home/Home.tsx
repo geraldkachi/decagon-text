@@ -4,9 +4,9 @@ import SecondBar from '../SecondBar/SecondBar'
 
 const Home = () => {
     return (
-        <div style={{display:'block'}}>
+        <div className='home'>
             <Main />
-            <SecondBar />
+            {/* <SecondBar /> */}
         </div>
     )
 }

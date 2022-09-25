@@ -17,6 +17,6 @@
 
 @media only screen and (max-width: 800px) {
     .layout__content {
-        /* padding-left: 200px; */
+        padding-left: 40px;
     }
 }
