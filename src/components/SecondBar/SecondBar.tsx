@@ -9,6 +9,8 @@ import PlusChip from "../../assets/chipplus.svg"
 import RightChip from "../../assets/chipright.svg"
 import CancelP from "../../assets/xchipP.svg"
 import CancelB from "../../assets/xchipb.svg"
+import ChipImg1 from "../../assets/chipimg1.svg"
+import ChipImg2 from "../../assets/chipimg2.svg"
 
 import TodaySch from "../../assets/TodaySch"
 
@@ -23,7 +25,7 @@ const SecondBar = () => {
             </div>
 
             <div style={{ borderBottom: '5px', borderColor: '#E8EDF1', margin: '0px 0' }}>
-                <h3>New Task</h3>
+                <h3 style={{color:'#005555', fontSize:'20px'}}>New Task</h3>
                 <div className="secondbarInputBody">
                     <div style={{ marginTop: '20px' }}>
                         <div className="inputBody">
@@ -38,6 +40,7 @@ const SecondBar = () => {
 
                         <div className="chip" style={{ background: '#E8E8FF', color: '#5051F9' }}>
                             <div className="chip__content">
+                                <img src={ChipImg1} alt="" />
                                 Angela
                             </div>
                             <img src={CancelP} alt="" />
@@ -46,6 +49,7 @@ const SecondBar = () => {
 
                         <div className="chip" style={{ background: '#E5F5FF', color: '#1EA7FF' }}>
                             <div className="chip__content">
+                                <img src={ChipImg2} alt="" />
                                 Chris
                             </div>
                             <img src={CancelB} alt="" />

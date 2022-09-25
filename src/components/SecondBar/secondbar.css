@@ -151,9 +151,14 @@
   padding: 4px 8px;
 }
 
+.chip__content img {
+  padding-right: 8px;
+}
 .chip__content {
   margin-right: 4px;
   padding: 0 5px;
+  display: flex;
+  align-items: center;
 }
 
 .chipplusright {

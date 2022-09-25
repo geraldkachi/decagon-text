@@ -150,7 +150,10 @@ const Main = () => {
     return (
         <div >
             <Cards />
-            <LineChart chartData={userData} />
+
+            <div className="tablebody">
+                <LineChart chartData={userData} />
+            </div>
 
             <div className='tablebody'>
                 <div className="taskseperate">
