@@ -16,6 +16,16 @@ import ChipImg2 from "../../assets/chipimg2.svg"
 
 import TodaySch from "../../assets/TodaySch"
 
+import "react-datetime/css/react-datetime.css";
+import Datetime from 'react-datetime';
+
+
+
+const getValue = localStorage.getItem('inputValue')
+
+
+const
+
 const SecondBar = () => {
     return (
         <div className='secondbar'>
