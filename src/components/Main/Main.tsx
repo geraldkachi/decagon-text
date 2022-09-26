@@ -4,10 +4,10 @@ import Cards from '../Cards/Cards'
 import Table from '../Table/Table'
 import tableData from '../../data/data.json'
 import ThreeDots from "../../assets/threedots.svg"
+import Progress from "../../assets/progress.svg"
 import LineChart from '../lineChart.tsx/LineChart'
 
 
-["Jan", "Feb", "Mar", "Apr", "May", "Jun", 'July', 'Aug', "Sep", "Oct", "Nov", "Dec"];
 export const UserData = [
     {
         id: 1,
@@ -134,7 +134,6 @@ const customerTableHead = [
     'Start Date',
     'End Date',
     'Hours',
-    'Hours',
     'Progress',
     "status"
 ]
@@ -171,8 +170,12 @@ const Main = () => {
             <td>{item?.email}</td>
             <td>{item?.location}</td>
             <td>{item?.hours}</td>
-            <td>{item?.total_spend}</td>
-            <td className="whitespace-nowrap">{item?.createdAt}</td>
+            <td className="whitespace-nowrap">{item?.createdAt}
+                <div>
+                    <p  style={{color: '#4BA8A8'}}>60% complete</p>
+                    <img src={Progress} alt="progress" />
+                </div>
+            </td>
             <td className="whitespace-nowrap"><img src={ThreeDots} alt="" /></td>
         </tr>
     )
@@ -181,7 +184,7 @@ const Main = () => {
         <div >
             <Cards />
 
-            <div className="tablebody" style={{ height:''}}>
+            <div className="tablebody" style={{ height: '' }}>
                 <LineChart chartData={userData} />
             </div>
 
