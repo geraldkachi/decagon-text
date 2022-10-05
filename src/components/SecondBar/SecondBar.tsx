@@ -16,32 +16,58 @@ import ChipImg2 from "../../assets/chipimg2.svg"
 
 import TodaySch from "../../assets/TodaySch"
 
-import "react-datetime/css/react-datetime.css";
 import Datetime from 'react-datetime';
+import "react-datetime/css/react-datetime.css";
+import { FormEvent, RefObject, useEffect, useRef, useState } from "react"
 
 
 
 const getValue = localStorage.getItem('inputValue')
 
 
-const
+// const
 
 const SecondBar = () => {
+
+    // const [formInput, setFormInput] = useState({})
+    const formInput = useRef<HTMLInputElement>(null)
+
+    const onFinish = (e: FormEvent)=> {
+        e.preventDefault();
+        const isExists = localStorage.getItem('todo') as unknown as { allTodos: [{ new: string, start: string, end: string, hours: string }] };
+        const arr = isExists?.allTodos || [];
+        const values = {
+            // new: formInput.current["new"].value,
+            new:  e.target['new'].value,
+            start: e.target["start"].value,
+            end: e.target["end"].value,
+            hours: e.target["hours"].value,
+        }
+        arr.push(values);
+        localStorage.setItem("todo", JSON.stringify(arr))
+        console.log(values, 'values')
+    }
+
+    useEffect(() => {
+        console.log(localStorage.getItem('values'))
+    }, [localStorage.getItem('values')])
+
+
     return (
         <div className='secondbar'>
             <div className='sideHeader'>
 
-                <p style={{color: "#005555", fontSize:'20px', margin:'20px 0'}}>Today's Scheudle</p>
+                <p style={{ color: "#005555", fontSize: '20px', margin: '20px 0' }}>Today's Scheudle</p>
 
                 <TodaySch />
             </div>
 
-            <div style={{ borderBottom: '5px', borderColor: '#E8EDF1', margin: '0px 0' }}>
-                <h3 style={{color:'#005555', fontSize:'20px'}}>New Task</h3>
+            <form onSubmit={onFinish} style={{ borderBottom: '5px', borderColor: '#E8EDF1', margin: '0px 0' }}>
+                <h3 style={{ color: '#005555', fontSize: '20px' }}>New Task</h3>
                 <div className="secondbarInputBody">
                     <div style={{ marginTop: '20px' }}>
                         <div className="inputBody">
-                            <input type="text" name="search" placeholder="Create new" />
+                            <input type="text" ref={formInput} name="new" placeholder="Create new" />
                         </div>
                     </div>
 
@@ -72,7 +98,7 @@ const SecondBar = () => {
 
                     </div>
 
-                    <div style={{borderBottom: '3px solid #E8EDF1', margin:'10px 0' }} />
+                    <div style={{ borderBottom: '3px solid #E8EDF1', margin: '10px 0' }} />
 
                     <p className="sideSubtitle">Time To Complete</p>
 
@@ -88,14 +114,45 @@ const SecondBar = () => {
 
                     <div style={{ marginTop: '20px' }}>
                         <div className="inputBody">
-                            <input type="text" name="search" placeholder="Start Date" />
+                            <input type="date" ref={formInput} name="start" placeholder="Start Date" />
+                            {/* <Datetime
+                                closeOnSelect
+                                timeFormat={false}
+                                className="text-black"
+                                //@ts-ignore
+                                // isValidDate={validBookingDate}
+                                dateFormat="DD-MM-YYYY"
+                                // onChange={onDateChange}
+                                renderInput={(props, open) => {
+                                    return (
+                                        <input
+                                            {...{ ...props }}
+                                            // @ts-ignore
+                                            onChange={e => {
+                                                props.onChange(e);
+                                            }}
+                                            // disabled
+                                            onClick={open}
+                                            label="Date"
+                                            activeInput={!!props.value}
+                                            TrailingIcon={() => (
+                                                // @ts-ignore
+                                                <span className="relative" onClick={open}>
+                                                    <img src={StartDate} alt="" className="bx bx-search" style={{ paddingRight: '20px' }} />
+                                                </span>
+                                            )}
+                                        />
+                                    );
+                                }}
+                            /> */}
+
                             <img src={StartDate} alt="" className="bx bx-search" style={{ paddingRight: '20px' }} />
                         </div>
                     </div>
 
                     <div style={{ marginTop: '20px' }}>
                         <div className="inputBody">
-                            <input type="text" name="search" placeholder="End Date" />
+                            <input type="date" ref={formInput} name="end" placeholder="End Date" />
                             <img src={StartDate} alt="" className="bx bx-search" style={{ paddingRight: '20px' }} />
                         </div>
                     </div>
@@ -104,14 +161,14 @@ const SecondBar = () => {
 
                     <div style={{ marginTop: '20px' }}>
                         <div className="inputBody">
-                            <input type="text" name="search" placeholder="Enter Hours" />
+                            <input type="text" ref={formInput} name="hours" placeholder="Enter Hours" />
                         </div>
                     </div>
                 </div>
 
 
                 <div className="buttonleft">
-                    <button>Save</button>
+                    <button type="submit">Save</button>
                 </div>
 
                 <div>
@@ -139,7 +196,7 @@ const SecondBar = () => {
 
 
 
-            </div>
+            </form>
         </div>
     )
 }

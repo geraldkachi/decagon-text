@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./main.css"
 import Cards from '../Cards/Cards'
 import Table from '../Table/Table'
@@ -140,6 +140,16 @@ const customerTableHead = [
 
 const Main = () => {
 
+    const [state, setState] = useState<{ allTodos: [{ new: string, start: string, end: string, hours: string }] }>([])
+
+
+    useEffect(() => {
+        const isExists = localStorage.getItem('todo') as string;
+        const arr = JSON.parse(isExists)
+        console.log(arr, "arr")
+        setState(arr);
+    }, [state, setState])
+
 
     const [userData] = useState({
         labels: UserData.map((data) => data.day.toUpperCase()),
@@ -166,9 +176,9 @@ const Main = () => {
 
     const renderBody = (item: any, index: number) => (
         <tr key={item.id}>
-            <td>{item?.name}</td>
-            <td>{item?.email}</td>
-            <td>{item?.location}</td>
+            <td>{item?.new}</td>
+            <td>{item?.start}</td>
+            <td>{item?.end}</td>
             <td>{item?.hours}</td>
             <td className="whitespace-nowrap">{item?.createdAt}
                 <div>
@@ -200,7 +210,8 @@ const Main = () => {
                 <Table
                     headData={customerTableHead}
                     renderHead={(item: any, index: number) => renderHead(item, index)}
-                    bodyData={tableData}
+                    // bodyData={tableData}
+                    bodyData={state}
                     renderBody={(item: any, index: number) => renderBody(item, index)}
                 />
             </div>
