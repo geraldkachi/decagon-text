@@ -148,7 +148,7 @@ const Main = () => {
         const arr = JSON.parse(isExists)
         console.log(arr, "arr")
         setState(arr);
-    }, [state, setState])
+    }, [setState])
 
 
     const [userData] = useState({
@@ -175,7 +175,7 @@ const Main = () => {
     const renderHead = (item: any, index: number) => <th style={{ color: '#768396', fontSize: '14px' }} key={index}>{item}</th>
 
     const renderBody = (item: any, index: number) => (
-        <tr key={item.id}>
+        <tr key={item.new}>
             <td>{item?.new}</td>
             <td>{item?.start}</td>
             <td>{item?.end}</td>
@@ -191,7 +191,7 @@ const Main = () => {
     )
 
     return (
-        <div >
+        <div style={{flex:1}}>
             <Cards />
 
             <div className="tablebody" style={{ height: '' }}>
